@@ -100,7 +100,7 @@ def draw_contours(img, imgray, filename, contours, hierarchy):
             cv2.rectangle(img, (x-1,y-1), (x+w+1,y+h+1), (255, 0, 0), 1)
             aux[x] = cv2.contourArea(contour)
             
-            if aux[x] >= 50 and aux[x] <= 190:
+            if aux[x] >= 50 and aux[x] <= 120:
                 aux_name = 'letter_' + base_name + '_' + str(count) + '.jpeg'
                 
                 count += 1
